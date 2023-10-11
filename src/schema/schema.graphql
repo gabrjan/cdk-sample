@@ -1,5 +1,4 @@
 type Customer {
-    customerId: String!
     email: String
     fullName: String
 }
@@ -14,7 +13,7 @@ type Order {
     date: String
     totalAmount: Float
     customer: Customer
-    products: Product
+    products: [Product]
 }
 
 type Query {

@@ -37,10 +37,10 @@ async function seedOrders() {
             TableName:  process.env.orderTableName as string,
             Item: {
                 orderId: `ORDER#${order.orderId}`,
-                customerId: `CUSTOMER#${order.email}`,
+                customerId: `CUSTOMER#${order.customerId}`,
                 date: order.date,
                 totalAmount: order.totalAmount,
-                productsQuantity: order.products
+                products: order.products
             }
         };
 

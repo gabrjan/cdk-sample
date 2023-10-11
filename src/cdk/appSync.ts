@@ -17,7 +17,7 @@ export class AppSyncStack extends Stack {
 
     const lambdaForQuery = new lambda.Function(this, 'MyLambdaFunction', {
       runtime: lambda.Runtime.NODEJS_16_X,
-      handler: 'queryOrders.handler',
+      handler: 'queryOrders/queryOrders.handler',
       code: lambda.Code.fromAsset('src/lambda/build'), // Path to your Lambda function code
       environment:{
         customerTable: props.customerTable.tableName,
@@ -25,6 +25,10 @@ export class AppSyncStack extends Stack {
         productTable: props.productTable.tableName
       }
     });
+
+    props.customerTable.grantReadWriteData(lambdaForQuery);
+    props.orderTable.grantReadWriteData(lambdaForQuery);
+    props.productTable.grantReadWriteData(lambdaForQuery);
 
 
     // Create a data source for your Lambda function
