@@ -9,6 +9,7 @@ export class DynamoStack extends Stack {
     // define resources here...
     new dynamodb.Table(this, 'Customer', {
       partitionKey: { name: 'customerId', type: dynamodb.AttributeType.STRING },
+      sortKey: {name: 'email', type: dynamodb.AttributeType.STRING },
       readCapacity: 5,
       writeCapacity: 5,
     });
@@ -25,14 +26,6 @@ export class DynamoStack extends Stack {
       readCapacity: 5,
       writeCapacity: 5,
     });
-
-    new dynamodb.Table(this, 'OrderProduct', {
-      partitionKey: { name: 'orderId', type: dynamodb.AttributeType.STRING },
-      sortKey: { name: 'productId', type: dynamodb.AttributeType.STRING },
-      readCapacity: 5,
-      writeCapacity: 5,
-    });
-
   }
 }
 
