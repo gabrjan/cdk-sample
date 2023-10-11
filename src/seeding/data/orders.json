@@ -1,0 +1,33 @@
+[
+  {
+    "orderId": "order1",
+    "customerId": "customer1",
+    "date": "2023-10-05",
+    "totalAmount": 100,
+    "products":[
+      {
+        "productId": "PRODUCT#product2"
+      },
+      {
+        "productId": "PRODUCT#product3"
+      }
+    ]
+  },
+  {
+    "orderId": "order2",
+    "customerId": "customer2",
+    "date": "2023-10-06",
+    "totalAmount": 150,
+    "products": [
+      {
+        "productId": "PRODUCT#product1"
+      },
+      {
+        "productId": "PRODUCT#product2"
+      },
+      {
+        "productId": "PRODUCT#product3"
+      }
+    ]
+  }
+]

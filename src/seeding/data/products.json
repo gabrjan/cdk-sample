@@ -1,0 +1,17 @@
+[
+  {
+    "productId": "product1",
+    "name": "laptop",
+    "price": 50
+  },
+  {
+    "productId": "product2",
+    "name": "smartphone",
+    "price": 20
+  },
+  {
+    "productId": "product3",
+    "name": "watch",
+    "price": 80
+  }
+]
