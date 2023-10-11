@@ -1,0 +1,21 @@
+type Customer {
+    email: String
+    fullName: String
+}
+
+type Product {
+    price: Float
+    quantity: Int
+}
+
+type Order {
+    orderId: String!
+    date: String
+    totalAmount: Float
+    customer: Customer
+    products: [Product]
+}
+
+type Query {
+    orders: [Order]
+}

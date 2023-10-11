@@ -6,10 +6,12 @@
     "totalAmount": 100,
     "products":[
       {
-        "productId": "PRODUCT#product2"
+        "productId": "PRODUCT#product2",
+        "quantity": 1
       },
       {
-        "productId": "PRODUCT#product3"
+        "productId": "PRODUCT#product3",
+        "quantity": 1
       }
     ]
   },
@@ -17,16 +19,19 @@
     "orderId": "order2",
     "customerId": "customer2",
     "date": "2023-10-06",
-    "totalAmount": 150,
+    "totalAmount": 250,
     "products": [
       {
-        "productId": "PRODUCT#product1"
+        "productId": "PRODUCT#product1",
+        "quantity": 3
       },
       {
-        "productId": "PRODUCT#product2"
+        "productId": "PRODUCT#product2",
+        "quantity": 1
       },
       {
-        "productId": "PRODUCT#product3"
+        "productId": "PRODUCT#product3",
+        "quantity": 1
       }
     ]
   }
