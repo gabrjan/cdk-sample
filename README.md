@@ -1,4 +1,3 @@
-```markdown
 # AWS CDK Backend Developer Test Task
 
 This is a sample AWS CDK TypeScript project that demonstrates how to create and manage AWS infrastructure using the AWS CDK. 
