@@ -1,6 +1,7 @@
 {
   "name": "sample",
   "scripts": {
+    "build-code": "cd src/lambda && npm run build",
     "build": "npx projen build",
     "bump": "npx projen bump",
     "bundle": "npx projen bundle",
